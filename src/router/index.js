@@ -7,6 +7,9 @@ import mesh from "../components/mesh/mesh.vue";
 import mountain from "../demo/mountain-terrain/mountain-terrain.vue";
 
 import material from "../components/material-color-texture/material-color-texture.vue";
+import uv from "../components/texture-uv/texture-uv.vue";
+import curve from "../components/curve/curve.vue";
+import figure from "../demo/cloudscape-figure/cloudscape-figure.vue";
 
 export const routes = [
   { path: "/", redirect: "/material-color-texture" },
@@ -16,6 +19,9 @@ export const routes = [
   { path: "/point-line-mesh", component: mesh },
   { path: "/mountain-terrain", component: mountain, isDemo: true },
   { path: "/material-color-texture", component: material },
+  { path: "/texture-uv", component: uv },
+  { path: "/curve", component: curve },
+  { path: "/cloudscape-figure", component: figure, isDemo: true },
 ];
 
 const router = createRouter({
