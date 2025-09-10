@@ -35,13 +35,13 @@ window.removeRAF = () => {
   overflow: hidden;
 }
 .header {
-  height: 56px;
   display: flex;
   justify-items: center;
   align-items: center;
   gap: 10px;
   padding: 8px;
   background-color: #1f1f1f;
+  flex-wrap: wrap;
 }
 .main {
   flex: 1;

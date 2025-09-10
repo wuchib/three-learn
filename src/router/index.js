@@ -11,6 +11,10 @@ import uv from "../components/texture-uv/texture-uv.vue";
 import curve from "../components/curve/curve.vue";
 import figure from "../demo/cloudscape-figure/cloudscape-figure.vue";
 
+import generateGeometry from "../components/geometry/geometry.vue";
+import tube from "../demo/tube-travel/tube-travel.vue";
+import infiniteTunnel from "../demo/infinite-tunnel/infinite-tunnel.vue";
+
 export const routes = [
   { path: "/", redirect: "/material-color-texture" },
   { path: "/base", component: base },
@@ -22,6 +26,9 @@ export const routes = [
   { path: "/texture-uv", component: uv },
   { path: "/curve", component: curve },
   { path: "/cloudscape-figure", component: figure, isDemo: true },
+  { path: "/generate-geometry", component: generateGeometry},
+  { path: "/tube-travel", component: tube, isDemo: true },
+  { path: "/infinite-tunnel", component: infiniteTunnel, isDemo: true },
 ];
 
 const router = createRouter({
