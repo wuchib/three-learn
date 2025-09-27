@@ -15,6 +15,8 @@ import generateGeometry from "../components/geometry/geometry.vue";
 import tube from "../demo/tube-travel/tube-travel.vue";
 import infiniteTunnel from "../demo/infinite-tunnel/infinite-tunnel.vue";
 
+import house from "../demo/house/house.vue";
+
 export const routes = [
   { path: "/", redirect: "/material-color-texture" },
   { path: "/base", component: base },
@@ -29,6 +31,7 @@ export const routes = [
   { path: "/generate-geometry", component: generateGeometry},
   { path: "/tube-travel", component: tube, isDemo: true },
   { path: "/infinite-tunnel", component: infiniteTunnel, isDemo: true },
+  { path: "/house", component: house, isDemo: true },
 ];
 
 const router = createRouter({

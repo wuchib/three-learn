@@ -8,6 +8,6 @@ const material = new THREE.MeshBasicMaterial(({
 }));
 const mesh = new THREE.Mesh(geometry, material);
 
-console.log(mesh);
+// console.log(mesh);
 
 export default mesh;
