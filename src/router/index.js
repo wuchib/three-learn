@@ -17,6 +17,11 @@ import infiniteTunnel from "../demo/infinite-tunnel/infinite-tunnel.vue";
 
 import house from "../demo/house/house.vue";
 
+
+import groupScene from "../components/scene-group/scene-group.vue";
+import lightHelp from "../components/light-helper/light-helper.vue";
+
+
 export const routes = [
   { path: "/", redirect: "/material-color-texture" },
   { path: "/base", component: base },
@@ -27,11 +32,13 @@ export const routes = [
   { path: "/material-color-texture", component: material },
   { path: "/texture-uv", component: uv },
   { path: "/curve", component: curve },
-  { path: "/cloudscape-figure", component: figure, isDemo: true },
+  { path: "/cloudscape-figure"  , component: figure, isDemo: true },
   { path: "/generate-geometry", component: generateGeometry},
   { path: "/tube-travel", component: tube, isDemo: true },
   { path: "/infinite-tunnel", component: infiniteTunnel, isDemo: true },
   { path: "/house", component: house, isDemo: true },
+  { path: "/scene-group", component: groupScene, isDemo: false },
+  { path: "/light-help", component: lightHelp, isDemo: false },
 ];
 
 const router = createRouter({

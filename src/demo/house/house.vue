@@ -65,11 +65,6 @@ function init() {
     window._RAF = requestAnimationFrame(render);
   }
 
-  //   function render() {
-  //     renderer.render(scene, camera);
-  //     window._RAF = requestAnimationFrame(render);
-  //   }
-
   render();
 
   dom.value.append(renderer.domElement);
